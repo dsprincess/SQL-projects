@@ -1,3 +1,4 @@
+Show all table data
 SELECT * FROM diamond_prices;
 
 /*1 How many total diamonds are on the list?*/
@@ -53,19 +54,19 @@ SELECT table_dia, COUNT table_dia) AS no_per_table
  GROUP BY table_dia
  ORDER BY no_per_table DESC;
  
-    /*10 What is the 3 most expensive diamonds.*/
+    /*10 What is the 3 most expensive diamonds?*/
 SELECT *, rank() over(ORDER BY price DESC) AS rnk
  FROM diamond_prices
  ORDER BY rnk
  LIMIT 3;
  
-     /*11 What is the 3 least expensive diamonds.*/
+     /*11 What is the 3 least expensive diamonds?*/
 SELECT *, row_number() over(ORDER BY price) AS rnk
  FROM diamond_prices
  ORDER BY rnk
  LIMIT 3;
  
-     /*12 What is the price of most expensive diamond per carat.*/
+     /*12 What is the price of most expensive diamond per carat?This could show the price gap for each carat.*/
 SELECT *, rank() over(ORDER BY carat DESC) AS rnk_carat
 FROM (SELECT carat, price AS highest_price, row_number() over(partition BY carat ORDER BY price DESC) AS rnk_price
  FROM diamond_prices
