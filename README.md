@@ -23,3 +23,7 @@ MicrosoftSQLServer
 **Customer Order Analysis**
 
 This another project was a great way to blend my financial background with data analysis and uncover some interesting trends.It involves analyzing sales data from the AdventureWorks database using SQL Server Management Studio (SSMS). It combines sales and customer demographic data to provide insights into customer orders and sales performance. The project uses Common Table Expressions (CTEs), JOINs, and window functions to aggregate sales data by year and product category, integrate customer details, and calculate running totals and rankings. 
+
+**Inventory Optimization**
+
+This project showcases my ability to optimize inventory using SQL and uncover insights for better inventory management. It analyzes data from the AdventureWorks2022 database, focusing on inventory turnover and overstock identification. The project involves calculating daily inventory levels, measuring inventory turnover ratios, and identifying overstocked and stockouts in products. Using Common Table Expressions (CTEs), JOINs, and conditional logic, it integrates sales data with inventory and product details to provide actionable insights for decision-making.
